@@ -17,7 +17,6 @@ for t in range(1,T+1):
             v = (v+1)%4 # 나간 케이스 / 우하좌상으로 델타 세워뒀음
             r += dr[v]  # 따라서 변한 델타값 적용
             c += dc[v]  # 여기도
-
     print(snail)
 
 
