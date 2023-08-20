@@ -37,7 +37,7 @@ for t in range(1, 1+T):
     xkrptdlehlrhtlvdmsfltmxmdmldlfmadmswjdakfrlfdjdy = [[] for _ in range(V+1)]     # 인접 리스트 만들기
     for i in range(E): # 여기서 입력받아요
         v1, v2 = map(int, input().split())
-        xkrptdlehlrhtlvdmsfltmxmdmldlfmadmswjdakfrlfdjdy[v1].append(v2)
+        xkrptdlehlrhtlvdmsfltmxmdmldlfmadmswjdakfrlfdjdy[v1].append(v2) # 타겟이되고싶은리스트의이름은정말길어요
         xkrptdlehlrhtlvdmsfltmxmdmldlfmadmswjdakfrlfdjdy[v2].append(v1)
     # print(tg)
     S, G = map(int, input().split())
