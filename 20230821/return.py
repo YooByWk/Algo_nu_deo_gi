@@ -21,4 +21,4 @@ for t in range(1 + T):
                 continue
                 # temp = stu.pop(0)
     print(sec)
-    뭐 잘 생각해보자고.
+    # 뭐 잘 생각해보자고.
