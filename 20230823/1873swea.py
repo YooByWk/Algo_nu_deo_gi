@@ -45,10 +45,10 @@ def sht(ss,hd):
         '^': 0, 'v': 1, '<': 2, '>': 3}
     sr += dr[l[hd]]
     sc += dc[l[hd]]
-    while 0<= sr < H and 0<= sc < W:
-
+    while 0<= sr < H and -1< sc < W:
         if stage[sr][sc] == '*':
             stage[sr][sc] = '.'
+            return
         elif stage[sr][sc] == '#':
             return
         sr += dr[l[hd]]
@@ -126,9 +126,8 @@ for t in range(1,T+1):
             sht(do,hd)
     stage[cr][cc] = hd
     print(f"#{t}",end =' ')
-
-
-    print(''.join(stage))
+    for k in range(H):
+        print(''.join(stage[k]))
 '''
         if do == '.':
 
