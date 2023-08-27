@@ -44,21 +44,19 @@
 
 
 for t in range(1, int(input())+1):
-    N, M, K = map(int, input().split())
+    N, M, K = map(int, input().split()) # N 손님, M 초 , K개
     tiempo = list(map(int, input().split()))
-    tiempo.sort()
+    tiempo.sort() #도착 순서 정렬
     pan = 0
     # f = 0
-    cnt = 1
-    # int(k/m)
+    cnt = 1 # 사람의 수 , 0초의 경우
     res = 'Possible'
-    # print(tiempo)
-    if tiempo[0] < M:
-        res = 'Impossible'
-        # continue
-    for cos in range(1,N):
-        cnt += 1
-        pan = tiempo[cos] // M * K
+    print(tiempo)
+    if tiempo[0] < M: # 0 초의 경우는 여기서 해결되는거라 아래 for는 1에서 출발
+        res = 'Impossible' # 0초에 손님이 왔는데 붕어빵이 없다면, 불가능
+    for cos in range(1,N): # N은 사람이다. 따라서 N 1개당 1명임.
+        cnt += 1 # 그래서 N 개수 따라서 사람  더해줌 # 도착순서 정렬은 필요함
+        pan = tiempo[cos] // M * K #
         if pan - cnt < 0:
             res = 'Impossible'
             break
