@@ -3,11 +3,12 @@ for _ in range(16):
     # print(s)
     for i in range(len(s)):
         if s[i] == '1':
-            s[i] = ':carrot_help:'
+            s[i] = ':iwan_shouting:'
         elif s[i] == '3':
             s[i] = ':cat_feed: '
         elif s[i] == '2':
             s[i] = ':happycat: '
         else:
-            s[i] = ':blob_cat-dance26:'
+            s[i] = ':iwan_shouting_pp: '
     print(*s)
+print()
