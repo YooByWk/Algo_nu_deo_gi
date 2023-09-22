@@ -25,4 +25,4 @@ else: # 짝수 케이스
         else:
             new.append(lst[i])
             new.append(lst[i-1])
-print(sum(new))
+print(sum(new)) # git질 안됐네 하.
