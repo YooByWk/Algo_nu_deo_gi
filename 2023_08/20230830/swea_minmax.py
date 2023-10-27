@@ -5,7 +5,11 @@ def ans(r,c,minn):
         if minn < kkk:
             kkk = minn
         return
+<<<<<<< HEAD
     if r < N-1 and minn < kkk:
+=======
+    if  r < N-1 and minn < kkk:
+>>>>>>> bf872246781b8aa5219a49ca60a96897a8f6e9b3
         ans(r+1,c,minn+nums[r][c])
     if c < N-1 and minn < kkk:
         ans(r,c+1,minn+ nums[r][c])
